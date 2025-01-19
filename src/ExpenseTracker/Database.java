@@ -9,7 +9,7 @@ public class Database {
 
     public static Connection getConnection() throws SQLException {
         Connection connection = DriverManager.getConnection(URL, USER, PASSWORD);
-        connection.setAutoCommit(false); // Disable auto-commit for transactions
+        connection.setAutoCommit(false);
         return connection;
     }
 }
